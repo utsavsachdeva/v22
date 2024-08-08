@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CSV Export Complete</title>
+</head>
+<body>
+    <p>Hi {{ sponsor.username }},</p>
+
+    <p>Your CSV export of campaign data is now complete.</p>
+
+    <p>You can download the CSV file <a href="{{ url_for('api.download_report', sponsor_id=sponsor.id) }}">here</a>.</p> 
+
+    <p>Best regards,</p>
+    <p>The Influencer Platform Team</p>
+</body>
+</html>
